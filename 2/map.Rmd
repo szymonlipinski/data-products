@@ -1,0 +1,20 @@
+---
+title: "map"
+author: "Szymon Lipiński"
+date: "8/9/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+It's just a simple map, centered at London, UK.
+```{r}
+library(leaflet)
+map <- leaflet() %>%
+  addTiles() %>%
+  setView(lng = -0.118092, lat = 51.509865, zoom = 10)
+map
+```
+
