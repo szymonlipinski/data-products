@@ -1,0 +1,17 @@
+
+========================================================
+author: Szymon Lipiński
+date: September 9, 2019
+autosize: true
+
+# A Very Simple Plotly Example
+========================================================
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+p<-plot_ly(mtcars, x=mtcars$wt, y=mtcars$mpg, mode="markers")
+htmlwidgets::saveWidget(as.widget(p), file = "demo.html")
+```
+
+<iframe src="demo.html" style="position:absolute;height:100%;width:100%"></iframe>
+
