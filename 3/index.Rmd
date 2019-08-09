@@ -1,0 +1,18 @@
+---
+title: "Simple Plotly"
+author: "Szymon Lipiński"
+date: "8/9/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# A Very Simple Plotly Example
+
+```{r message=FALSE, warning=FALSE}
+library(plotly)
+plot_ly(mtcars, x=mtcars$wt, y=mtcars$mpg, mode="markers")
+```
+
