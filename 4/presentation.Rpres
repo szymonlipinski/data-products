@@ -4,6 +4,9 @@ author: Szymon Lipiński
 date: 2019-08-12
 autosize: true
 
+### The application is available at:
+### https://szymonlipinski.shinyapps.io/simpleapp/
+
 The Application
 ========================================================
 The application shows chart for the Motor Trend Car Road Tests data
@@ -30,6 +33,8 @@ plot(mtcars$mpg, mtcars$hp)
 
 Links
 ========================================================
+
+The application is available at: https://szymonlipinski.shinyapps.io/simpleapp/.
 
 The data is available in the datasets package, description of the data can be found e.g. here:  https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html
 
