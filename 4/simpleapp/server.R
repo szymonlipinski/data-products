@@ -26,11 +26,17 @@ shinyServer(function(input, output) {
         "carb" = "Number of carburetors"
     )
     
+    
+    #a <- reactive()
     output$distPlot <- renderPlot({
+        xlab <- fieldToDescription[[input$xaxis]]
+        ylab <- fieldToDescription[[input$yaxis]]
+        title <- paste(c("Dependency of", xlab, "and", ylab), sep=" ")
         plot(mtcars[[input$xaxis]],
              mtcars[[input$yaxis]],
-             xlab=fieldToDescription[[input$xaxis]],
-             ylab=fieldToDescription[[input$yaxis]]
+             xlab=xlab,
+             ylab=ylab,
+             main=title
         )
     })
 

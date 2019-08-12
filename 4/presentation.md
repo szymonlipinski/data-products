@@ -24,9 +24,12 @@ The Plot
 
 The plot is made with the below code. The names of the variables are chosen by the user.
 
-```{r}
+
+```r
 plot(mtcars$mpg, mtcars$hp)
 ```
+
+![plot of chunk unnamed-chunk-1](presentation-figure/unnamed-chunk-1-1.png)
 
 Links
 ========================================================
